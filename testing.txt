@@ -1,0 +1,14 @@
+for i in range(1000):
+ time.sleep(0.01)
+ if keyboard.is_pressed('q'):
+  print('qqqqqqqqqqqqqq')
+  break
+
+
+2OR window:
+(650, 462, 1686, 1001)
+
+
+def capture_window((x0,y0,x1,y1)):
+ image = ImageGrab.grab((x0,y0,x1,y1))
+ return image

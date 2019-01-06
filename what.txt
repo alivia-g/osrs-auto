@@ -1,0 +1,3 @@
+add a wait function to lib.py
+make a "cookie_clicker.py"
+that clicks the cookie some N number of times with delays in between

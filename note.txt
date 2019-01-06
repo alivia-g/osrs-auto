@@ -1,0 +1,43 @@
+8LUKCUyie2fJUMX
+DONE:
+1. move to (1598, 758)
+2. right click at 1598, 758
+3. left click at (1578, 792)
+4. right click at (2019, 713)
+5. move to (1995, 771)
+6. left click at (1995, 771)
+7. add quit program hotkey (Ctrl+s)
+8. change to relative positioning
+-> find_window(title = "OSBuddy Guest - Guest")
+-> implement the function in get_xy and its inverse in move_click
+2. approximate color detection!
+-> abs(xa - xb) + abs(ya - yb) + abs(za - zb)
+    1. capture a screenshot
+    1.5: get the width and height
+    2. loop through all pixels in the image
+    3. for each pixel, compare its distance to the color parameter (which you already have - it's named "color"),
+    and see whether that distance is less than the tolerance.
+6. try FindWindow (not FindWindowEx)
+
+
+TODO:
+
+4. image detection (find and click on "Drop" word)
+5. login functionality (enter pw + click "play")
+7. fixed time wait:
+    1. random time wait (e.g. 5-10 seconds)
+    2. wait until a condition is satisfied
+    3. wait up to some time limit, or until a condition is satisfied (i.e. combination of 2 + 3)
+8. find_color_spiral (searches for colors from the center of the screen and going radially outward)
+9. check_attack_text check_text_color (hover over an attackable NPC -> yellow text on top-left corner of the screen
+-> attackable NPC)
+10. find_color_random (find_colors + choose a random pixel, not necessarily the first one found)
+11. find_color_patch (find a region with the same color) (the largest such region)
+
+
+NOTE TO "change to relative positioning":
+i. find python.exe
+ii. change file properties
+iii. compatibility tab
+iv. change high DPI
+v. override high DPI scaling behaviour. (scaling performed by: application)
