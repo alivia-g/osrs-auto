@@ -1,4 +1,4 @@
-# OSRS Botting
+# OSRS Automation
 This project is created to bot Old School RuneScape in attempt to automate the game.
 ## Purpose:
 Because that there are many repetitive tasks in Old School Runescape that require players to manually accomplish, such as leveling up a 
